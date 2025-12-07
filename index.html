@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <style type="text/tailwindcss"></style>
+    <title>Contries</title>
+</head>
+<body class="bg-slate-200">
+    <header class="py-[20px] shadow-md">
+        <div class="containers flex items-center justify-between">
+            <h1 class="font-bold text-[25px]">Contries</h1>
+            <div class="flex items-center gap-[30px]">
+                <button class="relative p-[12px] border-[1px] border-[#D14428] rounded-[100%] flex items-center"><span class="text-[12px] absolute right-[32px]">0</span><img src="./images/Like.png" alt="Like" width="20"></button>
+                <button class=" relative p-[12px] border-[1px] border-[#D14428] rounded-[100%] flex items-center"><span class="text-[12px] absolute right-[32px]">0</span> <img src="./images/Saved.png" alt="saved" width="20""></button>
+                <button class="p-[12px] border-[1px]  rounded-[100%] "><img src="./images/Mode.png" alt="Mode" width="20"></button>
+                <button class="p-[12px] border-[1px]  rounded-[100%]"><img src="./images/Create.png" alt="Create" width="20"></button>
+            </div>
+        </div>
+        
+    </header>
+    <main>
+        <section class="py-[40px]" >
+            <div class="containers">
+                <div class="flex items-center justify-between">
+                    <input class="border-[1px] w-[200px] py-[5px] px-[6px] rounded-[8px]" type="text" placeholder="Searching....">
+                    <select class="country-select border-[1px] w-[200px] py-[5px] rounded-[8px] pl-[5px]">
+                        <option value="All">All</option>
+                    </select>
+                </div>
+                <ul class="country-list flex justify-between flex-wrap gap-[30px] mt-[30px]"></ul>
+            </div>
+        </section>
+    </main>
+   
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/contries.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
